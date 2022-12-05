@@ -388,14 +388,8 @@
           "AlarmNO1",
           "AlarmNO2",
           "GND",
-          "Net-(C1-Pad1)",
-          "Net-(C1-Pad2)",
-          "Net-(C3-Pad1)",
-          "Net-(C3-Pad2)",
           "Net-(H1-Pad1)",
-          "Net-(IC1-Pad2)",
-          "Net-(IC1-Pad4)",
-          "Net-(IC1-Pad6)"
+          "Net-(IC1-Pad4)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
