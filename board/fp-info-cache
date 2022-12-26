@@ -1,4 +1,4 @@
-20631655384249429
+20635011882741851
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -79479,7 +79479,7 @@ Integrated Circuit
 9
 SamacSys_Parts
 SOIC127P600X175-8N
-8 SO-3
+8-lead plastic small outline(sn)
 Integrated Circuit
 0
 8
@@ -79505,6 +79505,13 @@ Integrated Circuit
 0
 4
 4
+SamacSys_Parts
+T81H5D31212
+T81H5D312-12-1
+Relay or Contactor
+0
+5
+5
 SamacSys_Parts
 TO254P483X1016X1994-3P
 TO-220AB
@@ -81038,6 +81045,13 @@ Logo WEEE
 0
 0
 0
+TBP03R2-350-03BE
+CUI_TBP03R2-350-03BE
+
+
+0
+3
+3
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf

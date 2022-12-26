@@ -24,7 +24,6 @@ async fn main(spawner: Spawner) {
     let mut p28 = p.PIN_28;
 
     spawner.spawn(logger_task()).unwrap();
-
     let mut counter = 0;
     loop {
         counter += 1;

@@ -370,7 +370,7 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.5,
+        "clearance": 0.4,
         "diff_pair_gap": 0.65,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.5,
@@ -381,21 +381,11 @@
         "nets": [
           "24V",
           "5V",
-          "AlarmC1",
-          "AlarmC2",
-          "AlarmNC1",
-          "AlarmNC2",
-          "AlarmNO1",
-          "AlarmNO2",
           "GND",
           "L1",
-          "LDNC",
-          "LDNO",
           "N",
           "Net-(C4-Pad1)",
-          "Net-(H1-Pad1)",
-          "Net-(IC1-Pad4)",
-          "Net-(K1-Pad2)"
+          "Net-(H1-Pad1)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -415,7 +405,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "C:/Users/leand/Desktop/dsh-bwm.dsn",
       "step": "",
       "vrml": ""
     },
