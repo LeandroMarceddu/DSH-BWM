@@ -67,9 +67,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "cortex-m"
-version = "0.7.6"
+version = "0.7.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70858629a458fdfd39f9675c4dc309411f2a3f83bede76988d81bf1a0ecee9e0"
+checksum = "8ec610d8f49840a5b376c69663b6369e71f4b34484b9b2eb29fb918d92516cb9"
 dependencies = [
  "bare-metal",
  "bitfield",
@@ -206,7 +206,7 @@ dependencies = [
 [[package]]
 name = "embassy-cortex-m"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -221,7 +221,7 @@ dependencies = [
 [[package]]
 name = "embassy-embedded-hal"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "embassy-sync",
  "embedded-hal 0.2.7",
@@ -235,7 +235,7 @@ dependencies = [
 [[package]]
 name = "embassy-executor"
 version = "0.1.1"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -250,12 +250,12 @@ dependencies = [
 [[package]]
 name = "embassy-futures"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 
 [[package]]
 name = "embassy-hal-common"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "defmt",
  "num-traits",
@@ -264,7 +264,7 @@ dependencies = [
 [[package]]
 name = "embassy-macros"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -273,9 +273,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "embassy-net-driver"
+version = "0.1.0"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
+
+[[package]]
+name = "embassy-net-driver-channel"
+version = "0.1.0"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
+dependencies = [
+ "embassy-futures",
+ "embassy-net-driver",
+ "embassy-sync",
+]
+
+[[package]]
 name = "embassy-rp"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -299,6 +314,7 @@ dependencies = [
  "embedded-storage",
  "futures",
  "nb 1.0.0",
+ "paste",
  "rand_core",
  "rp2040-pac2",
 ]
@@ -306,9 +322,8 @@ dependencies = [
 [[package]]
 name = "embassy-sync"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
- "atomic-polyfill 1.0.1",
  "cfg-if",
  "critical-section",
  "defmt",
@@ -320,7 +335,7 @@ dependencies = [
 [[package]]
 name = "embassy-time"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -335,10 +350,11 @@ dependencies = [
 [[package]]
 name = "embassy-usb"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "defmt",
  "embassy-futures",
+ "embassy-net-driver-channel",
  "embassy-sync",
  "embassy-usb-driver",
  "heapless",
@@ -349,7 +365,7 @@ dependencies = [
 [[package]]
 name = "embassy-usb-driver"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git#f109e73c6d7ef2ad93102b7c8223f5cef30ef36f"
+source = "git+https://github.com/embassy-rs/embassy.git#f98ba4ebac192e81c46933c0dc1dfb2d907cd532"
 dependencies = [
  "defmt",
 ]
@@ -580,6 +596,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "paste"
+version = "1.0.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d01a5bd0424d00070b0098dd17ebca6f961a959dead1dbcbbbc1d1cd8d3deeba"
+
+[[package]]
 name = "pin-project-lite"
 version = "0.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -617,18 +639,18 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.47"
+version = "1.0.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ea3d908b0e36316caf9e9e2c4625cdde190a7e6f440d794667ed17a1855e725"
+checksum = "6ef7d57beacfaf2d8aee5937dab7b7f28de3cb8b1828479bb5de2a7106f2bae2"
 dependencies = [
  "unicode-ident",
 ]
 
 [[package]]
 name = "quote"
-version = "1.0.21"
+version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bbe448f377a7d6961e30f5955f9b8d106c3f5e449d493ee1b125c1d43c2b5179"
+checksum = "8856d8364d252a14d474036ea1358d63c9e6965c8e5c1885c18f73d70bff9c7b"
 dependencies = [
  "proc-macro2",
 ]
@@ -663,7 +685,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bfa0f585226d2e68097d4f95d113b15b83a82e819ab25717ec0590d9584ef366"
 dependencies = [
- "semver 1.0.14",
+ "semver 1.0.16",
 ]
 
 [[package]]
@@ -683,9 +705,9 @@ dependencies = [
 
 [[package]]
 name = "semver"
-version = "1.0.14"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e25dfac463d778e353db5be2449d1cce89bd6fd23c9f1ea21310ce6e5a1b29c4"
+checksum = "58bc9567378fc7690d6b2addae4e60ac2eeea07becb2c64b9f218b53865cba2a"
 
 [[package]]
 name = "semver-parser"
@@ -695,9 +717,9 @@ checksum = "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3"
 
 [[package]]
 name = "serde"
-version = "1.0.148"
+version = "1.0.152"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e53f64bb4ba0191d6d0676e1b141ca55047d83b74f5607e6d8eb88126c52c2dc"
+checksum = "bb7d1f0d3021d347a83e556fc4683dea2ea09d87bccdf88ff5c12545d89d5efb"
 
 [[package]]
 name = "spin"
@@ -741,9 +763,9 @@ checksum = "73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623"
 
 [[package]]
 name = "syn"
-version = "1.0.105"
+version = "1.0.107"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "60b9b43d45702de4c839cb9b51d9f529c5dd26a4aff255b42b1ebc03e88ee908"
+checksum = "1f4064b5b16e03ae50984a5a8ed5d4f8803e6bc1fd170a3cda91a1be4b18e3f5"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -752,9 +774,9 @@ dependencies = [
 
 [[package]]
 name = "unicode-ident"
-version = "1.0.5"
+version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ceab39d59e4c9499d4e5a8ee0e2735b891bb7308ac83dfb4e80cad195c9f6f3"
+checksum = "84a22b9f218b40614adcb3f4ff08b703773ad44fa9423e4e0d346d5db86e4ebc"
 
 [[package]]
 name = "usb-device"
